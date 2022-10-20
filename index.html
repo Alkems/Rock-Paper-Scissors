@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <p id="result">First to score 5 points wins</p>
+    <p id="info">Live update</p>
+    <div id="stage">
+      <div>
+        <img id="player-img" src="./images/user.jpg" alt="" />
+        <p class="score" id="player-score">Player: 0</p>
+      </div>
+      <div>
+        <img id="comp-img" src="./images/robot.jpg" alt="" />
+        <p class="score" id="comp-score">Computer: 0</p>
+      </div>
+    </div>
+    <div id="options">
+      <img src="./images/rock.jpg" alt="" data-value="0" width="300" height="300" />
+      <img src="./images/paper.jpg" alt="" data-value="1" width="300" height="300" />
+      <img src="./images/scissors.jpg" alt="" data-value="2" width="300" height="300" />
+    </div>
+    <div class="popup">
+      <img src="./images/andrew.png" alt="" data-value="0" width="300" height="200" />
+      <p id="winner"></p>
+      <span id="points"></span>
+      <span id="hint">Press any key or anywhere to</span>
+      <button type="button">Play again</button>
+    </div>
+  </body>
+</html>
